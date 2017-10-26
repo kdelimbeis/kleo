@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kleo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", about_index_path %></li>
+      <li><%= link_to "Menu", '/menus/1/categories' %></li>
+      <li><%= link_to "Breakfast", '/menus/2/categories' %></li>
+      <li><%= link_to "Catering", '/menus/3/categories' %></li>
+    </ul>
+
+    <%= yield %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </body>
+</html>

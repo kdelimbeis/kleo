@@ -1,0 +1,24 @@
+.main-background {
+  background-image: url(main_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.hours{
+  width: 600px;
+  height: 200px;
+  border: 10px double red;
+  float: right;
+}
+
+.food{
+  width: 33%;
+
+  float: left;
+  display: inline-block;
+}
+
+.food-container{
+  height: 200px;
+}

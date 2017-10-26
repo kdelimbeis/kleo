@@ -1,0 +1,16 @@
+<h1>Items#index</h1>
+<p>Find me in app/views/items/index.html.erb</p>
+
+
+<body class="items-background"></body>
+<div class="sticky"></div>
+
+<% @items.each do |i| %>
+
+    <div class="item-container">
+      <p><span  class="item-name"> <%= i.name %></span>
+      <%= i.description %>
+      <%= i.price %></p>
+    </div>
+
+<% end %>
